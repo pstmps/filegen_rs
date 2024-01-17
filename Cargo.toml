@@ -10,3 +10,5 @@ rand = "0.8.4"
 csv = "1.3.0"
 clap = { version= "4.4.18", features = ["derive"] }
 rayon = "1.8.0"
+log = "0.4"
+env_logger = "0.10.1"
