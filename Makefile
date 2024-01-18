@@ -23,3 +23,8 @@ bump: ## Bump the version number
 	sed -E "s/^version = .*/version = \"$$version\"/" Cargo.toml > Cargo.toml.tmp && rm Cargo.toml && rm Cargo.lock &&  mv Cargo.toml.tmp Cargo.toml \
 	&& cargo check && \
 	echo "Updated Cargo.toml to version $$version"
+
+
+run: ## Run in debug mode
+	export RUST_LOG=info; \
+	cargo run -- -r /home/miki/remote_dev/watchfolder -n 100 -s 4 -p
