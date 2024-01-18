@@ -27,4 +27,10 @@ bump: ## Bump the version number
 
 run: ## Run in debug mode
 	export RUST_LOG=info; \
-	cargo run -- -r /home/miki/remote_dev/watchfolder -n 100 -s 4 -p
+	cargo run -- -r /home/miki/remote_dev/watchfolder -n 1000 -s 4 -p
+
+clean: ## Clean the project watchfiles
+	find /home/miki/remote_dev/watchfolder/project01/folder01 -mindepth 1 -type d -exec rm -rf {} \; &
+	find /home/miki/remote_dev/watchfolder/project01/folder02 -mindepth 1 -type d -exec rm -rf {} \; &
+	find /home/miki/remote_dev/watchfolder/project02/folder01 -mindepth 1 -type d -exec rm -rf {} \; &
+	find /home/miki/remote_dev/watchfolder/project02/folder02 -mindepth 1 -type d -exec rm -rf {} \; &
