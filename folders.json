@@ -1,0 +1,18 @@
+{
+    "projects": [
+        {
+            "name": "Project1",
+            "paths": [
+                "/home/miki/remote_dev/watchfolder/project01/folder01",
+                "/home/miki/remote_dev/watchfolder/project01/folder02"
+            ]
+        },
+        {
+            "name": "Project2",
+            "paths": [
+                "/home/miki/remote_dev/watchfolder/project02/folder01",
+                "/home/miki/remote_dev/watchfolder/project02/folder02"
+            ]
+        }
+    ]
+}

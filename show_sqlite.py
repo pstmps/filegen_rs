@@ -2,7 +2,7 @@
 import sqlite3
 import os
 
-path = '/home/miki/remote_dev/watchywatchywatcher_rs/watchywatchy.db'
+path = '/home/miki/remote_dev/watchywatchywatcher_tokio/watchy.db'
 
 if not os.path.exists(path):
     print('database does not exist')
@@ -10,7 +10,7 @@ if not os.path.exists(path):
 
 conn = sqlite3.connect(path)
 c = conn.cursor()
-query = 'SELECT * FROM events'
+query = 'SELECT * FROM folders'
 c.execute(query)
 rows = c.fetchall()
 for row in rows:

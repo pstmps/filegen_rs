@@ -9,9 +9,9 @@ path = '/home/miki/remote_dev/watchywatchywatcher_rs/folders.json'
 exec_path = '/home/miki/remote_dev/filegen_rs/target/release/filegen_rs'
 
 
-number_of_files = 1000
-file_size = 10000000
-subfolders = 5
+number_of_files = 100#_000
+file_size = 10#_000_000
+subfolders = 2
 purge = False
 
 args = ['export RUST_LOG=info;', exec_path, '-n', str(number_of_files), '-f', str(file_size), '-s', str(subfolders)] + (['-p'] if purge else [])
